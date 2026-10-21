@@ -9,8 +9,7 @@
 <nav class="navbar md:navbar-expand bg-1">
   <div class="container-fluid navbar-container">
     <a class="navbar-brand brand-logo text-decoration-none" href="#">
-      <!-- Estilo directo en la etiqueta para forzar el tamaño pequeño -->
-      <img src="img/logo PuenteLab.png" alt="PuenteLab" class="brand-img" style="height: 28px; width: auto;">
+      <img src="img/logo PuenteLab.png" alt="PuenteLab" class="brand-img">
       <span class="brand-text">
         <span class="text-dark">Puente</span><span class="text-purple">Lab</span>
       </span>
@@ -26,13 +25,21 @@
       <div class="drawer-body mb-2 md:mb-0">
         <ul class="nav navbar-nav me-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <!-- CAMBIO: Se ajustaron los selectores de imagen e iconos para el menu desplegable -->
+            <a class="nav-link active" aria-current="page" href="#">
+              <svg class="bi nav-icon" width="16" height="16" aria-hidden="true"><use href="#home" /></svg>
+              Home
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">
+              <svg class="bi nav-icon" width="16" height="16" aria-hidden="true"><use href="#link" /></svg>
+              Link
+            </a>
           </li>
           <li class="nav-item">
             <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+              <svg class="bi nav-icon" width="16" height="16" aria-hidden="true"><use href="#menu-grid" /></svg>
               Menu
             </button>
             <div class="menu">
@@ -43,7 +50,10 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            <a class="nav-link disabled" aria-disabled="true">
+              <svg class="bi nav-icon" width="16" height="16" aria-hidden="true"><use href="#disabled" /></svg>
+              Disabled
+            </a>
           </li>
         </ul>
         <form class="hstack gap-2" role="search">
