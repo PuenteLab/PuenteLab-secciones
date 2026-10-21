@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 <!--navbar -->
 <nav class="navbar md:navbar-expand bg-1">
   <div class="container-fluid navbar-container">
     <a class="navbar-brand brand-logo text-decoration-none" href="#">
-      <img src="img/logo PuenteLab.png" alt="PuenteLab" class="brand-img">
+      <img src="img/logo PuenteLab.png" alt="PuenteLab" class="brand-img" style="height: 28px; width: auto;">
       <span class="brand-text">
         <span class="text-dark">Puente</span><span class="text-purple">Lab</span>
       </span>
@@ -19,52 +20,37 @@
     </button>
     <dialog class="drawer drawer-end" tabindex="-1" id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
       <div class="drawer-header">
-        <h5 class="drawer-title" id="navbarDrawerLabel">Menu</h5>
+        <h5 class="drawer-title" id="navbarDrawerLabel">Perfil
+
+        </h5>
         <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
       </div>
       <div class="drawer-body mb-2 md:mb-0">
         <ul class="nav navbar-nav me-auto">
           <li class="nav-item">
-            <!-- CAMBIO: Se ajustaron los selectores de imagen e iconos para el menu desplegable -->
-            <a class="nav-link active" aria-current="page" href="#">
-              <svg class="bi nav-icon" width="16" height="16" aria-hidden="true"><use href="#home" /></svg>
-              Home
-            </a>
+            <a class="nav-link active" aria-current="page" href="#">Notificaciones</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
-              <svg class="bi nav-icon" width="16" height="16" aria-hidden="true"><use href="#link" /></svg>
-              Link
-            </a>
+            <a class="nav-link" href="#">Perfil</a>
           </li>
           <li class="nav-item">
-            <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
-              <svg class="bi nav-icon" width="16" height="16" aria-hidden="true"><use href="#menu-grid" /></svg>
-              Menu
-            </button>
-            <div class="menu">
-              <a class="menu-item" href="#">Action</a>
-              <a class="menu-item" href="#">Another action</a>
-              <hr class="menu-divider">
-              <a class="menu-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">
-              <svg class="bi nav-icon" width="16" height="16" aria-hidden="true"><use href="#disabled" /></svg>
-              Disabled
-            </a>
-          </li>
         </ul>
-        <form class="hstack gap-2" role="search">
-          <input class="form-control" type="search" placeholder="Search" aria-label="Search"/>
+        <form class="hstack gap-2" role="Buscar">
+          <input class="form-control" type="Buscar" placeholder="Buscar" aria-label="Buscar"/>
           <button class="btn-solid btn-icon theme-secondary" type="submit">
-            <svg class="bi" width="16" height="16"><use href="#search" /></svg>
+            <svg class="bi" width="16" height="16"><use href="#Buscar" /></svg>
           </button>
         </form>
       </div>
     </dialog>
   </div>
 </nav>
+
+<div class="welcome-container">
+  <h1>¡Hola, Martina!</h1>
+  <p>Seguimos construyendo tu futuro</p>
+</div>
+
+<script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
 </body>
 </html>
