@@ -22,7 +22,7 @@
 }
 
 
-<!--Hola--!>
+
 .welcome-container {
   padding: 20px;
 }
@@ -38,3 +38,46 @@
   color: #6c757d;
 }
 
+.profile-card {
+  width: 98vw;
+  background-color: #f3efff;
+  border: none;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.profile-card .card-body {
+  justify-content: flex-start !important;
+  padding-left: 24px;
+}
+
+.profile-icon-box {
+  background-color: #f3efff;
+  width: 72px;
+  height: 72px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.profile-card .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #2b2b2b;
+  text-align: left !important;
+}
+
+.profile-card .card-text {
+  font-size: 1rem;
+  color: #555555;
+  text-align: left !important;
+}
