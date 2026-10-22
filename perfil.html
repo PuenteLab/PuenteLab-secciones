@@ -26,8 +26,104 @@
     </div>
    </header>
    <h1 class="titulo-perfil">Mi Perfil</h1>
-   
- </div>
+   <section class="secciones-perfil">
+    <div class="card tarjeta-perfil">
+        <div class="card-body">
+            <i class="bi bi-compass icono-tarjeta"></i>
+            <h3 class="card-title">Tus intereses y orientación</h3>
+            <p class="card-text">
+                Explorá tus intereses y descubrí nuevas oportunidades.
+            </p>
+        </div>
+    </div>
+    <div class="card tarjeta-perfil">
+        <div class="card-body">
+            <i class="bi bi-lightbulb icono-tarjeta"></i>
+            <h3 class="card-title">Habilidades y objetivos</h3>
+            <p class="card-text">
+                Conocé tus habilidades y definí tus objetivos.
+            </p>
+        </div>
+    </div>
+    <div class="card tarjeta-perfil">
+        <div class="card-body">
+            <i class="bi bi-file-earmark-text icono-tarjeta"></i>
+            <h3 class="card-title">Tu postulación</h3>
+            <p class="card-text">
+                Consultá el estado de tus postulaciones.
+            </p>
+        </div>
+    </div>
+    <div class="card tarjeta-perfil">
+        <div class="card-body">
+            <i class="bi bi-people icono-tarjeta"></i>
+            <h3 class="card-title">Red de mentores</h3>
+            <p class="card-text">
+                Encontrá orientación para tu desarrollo.
+            </p>
+        </div>
+    </div>
+   </section>
+   <nav class="barra-inferior">
+    <a href="#" class="item-nav">
+        <i class="bi bi-house"></i>
+        <span>Inicio</span>
+    </a>
+    <a href="#" class="item-nav">
+        <i class="bi bi-compass"></i>
+        <span>Explorar</span>
+    </a>
+    <a href="#" class="item-nav">
+        <i class="bi bi-heart"></i>
+        <span>Favoritos</span>
+    </a>
+    <a href="#" class="item-nav">
+        <i class="bi bi-briefcase"></i>
+        <span>Oportunidades</span>
+    </a>
+    <a href="#" class="item-nav activo">
+        <i class="bi bi-person"></i>
+        <span>Perfil</span>
+    </a>
+   </nav>
+   <nav class="navbar md:navbar-expand bg-1">
+  <div class="container-fluid navbar-container">
+    <a class="navbar-brand brand-logo text-decoration-none" href="#">
+      <img src="img/logo PuenteLab.png" alt="PuenteLab" class="brand-img" style="height: 28px; width: auto;">
+      <span class="brand-text">
+        <span class="text-dark">Puente</span><span class="text-purple">Lab</span>
+      </span>
+    </a>
+    <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDrawer" aria-controls="navbarDrawer" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" aria-hidden="true"></span>
+    </button>
+    <dialog class="drawer drawer-end" tabindex="-1" id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
+      <div class="drawer-header">
+        <h5 class="drawer-title" id="navbarDrawerLabel">Perfil
+
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+      </div>
+      <div class="drawer-body mb-2 md:mb-0">
+        <ul class="nav navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Notificaciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Perfil</a>
+          </li>
+          <li class="nav-item">
+        </ul>
+        <form class="hstack gap-2" role="Buscar">
+          <input class="form-control" type="Buscar" placeholder="Buscar" aria-label="Buscar"/>
+          <button class="btn-solid btn-icon theme-secondary" type="submit">
+            <svg class="bi" width="16" height="16"><use href="#Buscar" /></svg>
+          </button>
+        </form>
+      </div>
+    </dialog>
+  </div>
+   </nav>
 
 </body>
 </html>
