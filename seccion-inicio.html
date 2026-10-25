@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+<!--navbar -->
+<nav class="navbar md:navbar-expand bg-1">
+  <div class="container-fluid navbar-container">
+    <a class="navbar-brand brand-logo text-decoration-none" href="#">
+      <img src="img/logo PuenteLab.png" alt="PuenteLab" class="brand-img" style="height: 28px; width: auto;">
+      <span class="brand-text">
+        <span class="text-dark">Puente</span><span class="text-purple">Lab</span>
+      </span>
+    </a>
+    <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDrawer" aria-controls="navbarDrawer" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" aria-hidden="true"></span>
+    </button>
+    <dialog class="drawer drawer-end" tabindex="-1" id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
+      <div class="drawer-header">
+        <h5 class="drawer-title" id="navbarDrawerLabel">Perfil
+
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+      </div>
+      <div class="drawer-body mb-2 md:mb-0">
+        <ul class="nav navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Notificaciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Perfil</a>
+          </li>
+          <li class="nav-item">
+        </ul>
+        <form class="hstack gap-2" role="Buscar">
+          <input class="form-control" type="Buscar" placeholder="Buscar" aria-label="Buscar"/>
+          <button class="btn-solid btn-icon theme-secondary" type="submit">
+            <svg class="bi" width="16" height="16"><use href="#Buscar" /></svg>
+          </button>
+        </form>
+      </div>
+    </dialog>
+  </div>
+</nav>
+
+<div class="welcome-container">
+  <h1>¡Hola, Martina!</h1>
+  <p>Seguimos construyendo tu futuro</p>
+</div>
+
+<!--cards-->
+
+<div class="container-fluid cards-container">
+
+  <a href="perfil.html" class="text-decoration-none text-reset">
+    <div class="card profile-card">
+      <div class="card-body d-flex align-items-center gap-3 p-3">
+        <div class="profile-icon-box">
+          <img src="img/perfil.png" alt="Icono Perfil" class="profile-img">
+        </div>
+        <div class="text-start">
+          <h4 class="card-title mb-1">PERFIL</h4>
+          <p class="card-text mb-0">Gestioná tu información y tus intereses...</p>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <a href="oportunidades.html" class="text-decoration-none text-reset">
+    <div class="card profile-card">
+      <div class="card-body d-flex align-items-center gap-3 p-3">
+        <div class="profile-icon-box">
+          <img src="img/Oprotunidades.png" alt="Icono Oportunidades" class="profile-img">
+        </div>
+        <div class="text-start">
+          <h4 class="card-title mb-1">OPORTUNIDADES</h4>
+          <p class="card-text mb-0">Encontrá pasantías y proyectos con empresas...</p>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <a href="mentorias.html" class="text-decoration-none text-reset">
+    <div class="card profile-card">
+      <div class="card-body d-flex align-items-center gap-3 p-3">
+        <div class="profile-icon-box">
+          <img src="img/mentorias.png" alt="Icono Mentorías" class="profile-img">
+        </div>
+        <div class="text-start">
+          <h4 class="card-title mb-1">MENTORÍAS</h4>
+          <p class="card-text mb-0">Conectá con profesionales de tu área e intereses...</p>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <a href="proyectos.html" class="text-decoration-none text-reset">
+    <div class="card profile-card">
+      <div class="card-body d-flex align-items-center gap-3 p-3">
+        <div class="profile-icon-box">
+          <img src="img/proyectos.png" alt="Icono Proyectos" class="profile-img">
+        </div>
+        <div class="text-start">
+          <h4 class="card-title mb-1">PROYECTOS</h4>
+          <p class="card-text mb-0">Colaborá en proyectos reales y sumá experiencia...</p>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <a href="preparacion-laboral.html" class="text-decoration-none text-reset">
+    <div class="card profile-card">
+      <div class="card-body d-flex align-items-center gap-3 p-3">
+        <div class="profile-icon-box">
+          <img src="img/prep labaoral.png" alt="Icono Preparación laboral" class="profile-img">
+        </div>
+        <div class="text-start">
+          <h4 class="card-title mb-1">PREPARACIÓN LABORAL</h4>
+          <p class="card-text mb-0">Desarrollá tus habilidades y preparate para tu futuro...</p>
+        </div>
+      </div>
+    </div>
+  </a>
+
+</div>
+
+
+<script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+</body>
+</html>
