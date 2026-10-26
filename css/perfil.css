@@ -10,10 +10,10 @@ body {
 }
 .perfil-app {
     width: 100%;
-    max-width: 500px;
+    max-width: 1200px;
     min-height: 100vh;
     margin: 0 auto;
-    padding: 0 20px 100px;
+    padding: 24px 40px 100px;
 }
 .encabezado {
     min-height: 78px;
@@ -189,5 +189,69 @@ body {
     }
     .item-nav i {
         font-size: 24px;
+    }
+}
+@media (min-width: 768px) {
+    .perfil-app {
+        max-width: 1200px;
+        padding: 24px 40px 110px;
+    }
+    .encabezado {
+        min-height: 90px;
+        padding: 0 10px;
+    }
+    .marca {
+        font-size: 26px;
+    }
+    .marca > i {
+        font-size: 40px;
+    }
+    .iconos-header {
+        gap: 30px;
+    }
+    .iconos-header i {
+        font-size: 25px;
+    }
+    .titulo-perfil {
+        margin: 35px 0 28px;
+        font-size: 32px;
+    }
+    .perfil-usuario {
+        max-width: 100%;
+        padding: 28px 32px;
+    }
+    .perfil-identidad h2 {
+        font-size: 28px;
+    }
+    .dato-perfil {
+        margin-bottom: 14px;
+    }
+    .etiqueta-dato {
+        font-size: 19px;
+    }
+    .valor-dato {
+        font-size: 17px;
+    }
+    .btn-editar {
+        max-width: 300px;
+    }
+    .secciones-perfil {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+    .tarjeta-perfil {
+        min-height: 120px;
+    }
+    .tarjeta-perfil .card-body {
+        padding: 24px;
+    }
+    .tarjeta-perfil .card-title {
+        font-size: 20px;
+    }
+    .barra-inferior {
+        padding: 14px 15%;
+    }
+    .item-nav i {
+        font-size: 28px;
     }
 }
