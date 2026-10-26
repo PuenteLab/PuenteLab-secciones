@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi perfil | PuenteLab</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/perfil.css">
+</head>
+<body>
+    <div class="perfil-app">
+        <nav class="navbar md:navbar-expand bg-1">
+          <div class="container-fluid navbar-container">
+            <a class="navbar-brand brand-logo text-decoration-none" href="#">
+            <img src="imagenes/imagen-PuenteLab.jpg" alt="PuenteLab" class="brand-img" style="height: 28px; width: auto;">
+            <span class="brand-text">
+            <span class="text-dark">Puente</span><span class="text-purple">Lab</span>
+            </span>
+            </a>
+            <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDrawer" aria-controls="navbarDrawer" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            </button>
+            <dialog class="drawer drawer-end" tabindex="-1" id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
+              <div class="drawer-header">
+                 <h5 class="drawer-title" id="navbarDrawerLabel">Perfil
+
+                 </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+             </div>
+             <div class="drawer-body mb-2 md:mb-0">
+               <ul class="nav navbar-nav me-auto">
+                  <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Notificaciones</a>
+                  </li>
+                  <li class="nav-item">
+                   <a class="nav-link" href="#">Perfil</a>
+                  </li>
+                  <li class="nav-item">
+               </ul>
+               <form class="hstack gap-2" role="Buscar">
+                 <input class="form-control" type="Buscar" placeholder="Buscar" aria-label="Buscar"/>
+                <button class="btn-solid btn-icon theme-secondary" type="submit">
+                   <svg class="bi" width="16" height="16"><use href="#Buscar" /></svg>
+                 </button>
+               </form>
+             </div>
+           </dialog>
+          </div>
+       </nav>
+
+
+        <h1 class="titulo-perfil">MI PERFIL</h>
+        <section class="perfil-usuario">
+            <div class="perfil-identidad">
+                <i class="bi bi-person-circle avatar-perfil"></i>
+                <h2>Martina López</h2>
+            </div>
+            <div class="dato-perfil">
+                <p class="etiqueta-dato">Nombre completo</p>
+                <p class="valor-dato">Martina López</p>
+            </div>
+            <div class="dato-perfil">
+                <p class="etiqueta-dato">Email</p>
+                <p class="valor-dato">Martina@gmail.com</p>
+            </div>
+            <div class="dato-perfil">
+                <p class="etiqueta-dato">Mi objetivo</p>
+                <p class="valor-dato">
+                    Conseguir mi primer trabajo en el área de tecnología.
+                </p>
+            </div>
+            <div class="dato-perfil">
+                <p class="etiqueta-dato">Biografía</p>
+                <p class="valor-dato">
+                    Soy estudiante de informática, me interesa la programación
+                    y el desarrollo web.
+                </p>
+            </div>
+            <button type="button" class="btn-editar">
+                Editar perfil
+            </button>
+        </section>
+        <section class="secciones-perfil">
+            <div class="card tarjeta-perfil">
+                <div class="card-body">
+                    <h3 class="card-title">
+                        Tus intereses y orientación
+                    </h3>
+                </div>
+            </div>
+            <div class="card tarjeta-perfil">
+                <div class="card-body">
+                    <h3 class="card-title">
+                        Habilidades y objetivos
+                    </h3>
+                </div>
+            </div>
+            <div class="card tarjeta-perfil">
+                <div class="card-body">
+                    <h3 class="card-title">Tu postulación</h3>
+                </div>
+            </div>
+            <div class="card tarjeta-perfil">
+                <div class="card-body">
+                    <h3 class="card-title">Red de mentores</h3>
+                </div>
+            </div>
+        </section>
+        <nav class="barra-inferior" aria-label="Navegación principal">
+            <a href="#" class="item-nav activo" aria-label="Perfil">
+                <i class="bi bi-person"></i>
+            </a>
+            <a href="#" class="item-nav" aria-label="Favoritos">
+                <i class="bi bi-star-fill"></i>
+            </a>
+            <a href="#" class="item-nav" aria-label="Comunidad">
+                <i class="bi bi-people"></i>
+            </a>
+            <a href="#" class="item-nav" aria-label="Oportunidades">
+                <i class="bi bi-briefcase-fill"></i>
+            </a>
+            <a href="#" class="item-nav" aria-label="Carpeta">
+                <i class="bi bi-folder"></i>
+            </a>
+        </nav>
+    </div>
+</body>
+</html>
