@@ -1,114 +1,159 @@
-/* style.css - FORMATO COMPU */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+}
+.brand-img {
+  height: 28px;
+  width: auto;
+}
+.brand-text {
+  font-weight: bold;
+  font-size: 1.15rem;
+  letter-spacing: -0.5px;
+}
+.text-purple {
+  color: #7b61ff;
+}
 
-:root{
-    --morado: #8b7cf0;
-    --morado-oscuro: #6b46c1;
-    --rosita: #ff8fab;
-    --rosita-claro: #ffd6e0;
+
+
+.welcome-container {
+  padding: 20px;
+}
+
+.welcome-container h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #212529;
+}
+
+.welcome-container p {
+  font-size: 16px;
+  color: #6c757d;
+}
+
+
+.cards-container {
+  width: 100%;
+  padding: 20px 15px;
+}
+
+.profile-card {
+  width: 100%;
+  background-color: #f3efff;
+  border: none;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.profile-card .card-body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 12px 20px;
+}
+
+.profile-icon-box {
+  background-color: #EADDFF;
+  width: 72px;
+  height: 72px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.profile-card .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #2b2b2b;
+  text-align: left;
+}
+
+.profile-card .card-text {
+  font-size: 1rem;
+  color: #555555;
+  text-align: left;
+}
+
+@media (max-width: 576px) {
+  .cards-container {
+    padding: 15px 10px;
   }
-  
-  /* FONDO Y CENTRADO EN COMPU */
-  body{
-    background: linear-gradient(135deg, #fdf2f8 0%, #f3e8ff 100%);
-    min-height: 100vh;
-    margin: 0;
-    padding: 40px;
-    display: flex;
-    justify-content: center;
-    font-family: system-ui, -apple-system, sans-serif;
+
+  .profile-card .card-body {
+    padding: 12px;
   }
-  
-  /* CONTENEDOR ANCHO COMPU */
-  .contenedor-compu{
-    width: 100%;
-    max-width: 800px;
+
+  .profile-icon-box {
+    width: 60px;
+    height: 60px;
   }
-  
-  .titulo-pagina{
-    color: #5a5f7a;
-    font-weight: 700;
-    font-size: 28px;
-    margin-bottom: 20px;
+
+  .profile-img {
+    width: 34px;
+    height: 34px;
   }
-  
-  /* TARJETA - BORDE Y SEPARACIÓN */
-  .formulario-card{
-    width: 100%;
-    background: white;
-    border: 2px solid var(--rosita-claro);
-    border-radius: 22px;
-    padding: 40px;
-    box-shadow: 0 10px 40px rgba(139,124,240,0.15);
+
+  .profile-card .card-title {
+    font-size: 1rem;
   }
-  
-  /* LOGO */
-  .cabecera-logo{
-    text-align: center;
-    margin-bottom: 30px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #f3e8ff;
+
+  .profile-card .card-text {
+    font-size: 0.85rem;
   }
-  
-  .titulo-logo{
-    color: #2f3551;
-    font-size: 40px;
-    font-weight: bold;
-    margin: 0;
-  }
-  
-  .logo-morado{ color: var(--morado); }
-  .subtitulo{ color: #6c757d; font-size: 14px; margin-top: 5px; }
-  
-  /* FORMULARIO EN 2 COLUMNAS PARA COMPU */
-  .form-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-  
-  .col-span-2{
-    grid-column: span 2;
-  }
-  
-  .form-label{
-    color: var(--morado-oscuro);
-    font-weight: 600;
-    font-size: 14px;
-    margin-bottom: 6px;
-    display: block;
-  }
-  
-  .form-control, .form-select{
-    width: 100%;
-    height: 46px;
-    border-radius: 12px;
-    border: 1.5px solid #e9d5ff;
-    background: #fcf8ff;
-    padding: 0 14px;
-    box-sizing: border-box;
-  }
-  
-  .form-control:focus, .form-select:focus{
-    outline: none;
-    border-color: var(--morado);
-    box-shadow: 0 0 0 4px rgba(139,124,240,0.15);
-    background: white;
-  }
-  
-  .campo-check{ margin: 10px 0; }
-  .link-terminos{ color: var(--morado); font-weight: 600; }
-  
-  /* BOTON */
-  .btn-registrar{
-    background: linear-gradient(90deg, var(--morado) 0%, var(--rosita) 100%);
-    border: none;
-    height: 52px;
-    border-radius: 14px;
-    font-weight: 600;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .btn-registrar:hover{
-    background: linear-gradient(90deg, #7a6ae0 0%, #ff6b9d 100%);
-  } 
+}
+
+
+.profile-card .card-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start !important;
+  align-items: center;
+  text-align: left;
+  padding: 12px 24px;
+}
+
+.profile-card .profile-icon-box {
+  flex-shrink: 0;
+}
+
+.profile-card .card-title,
+.profile-card .card-text {
+  text-align: left !important;
+}
+
+.cards-container .profile-card .card-body > div:last-child {
+  flex: 0 1 auto;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.cards-container {
+  width: 100%;
+  max-width: 100%;
+  padding: 20px 10px;
+  margin: 0;
+}
+
+.profile-card {
+  width: 100%;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
