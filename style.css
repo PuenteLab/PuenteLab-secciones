@@ -140,20 +140,8 @@
 .cards-container .profile-card .card-body > div:last-child {
   flex: 0 1 auto;
 }
+
 body {
-  margin: 0;
-  padding: 0;
-}
-
-.cards-container {
-  width: 100%;
-  max-width: 100%;
-  padding: 20px 10px;
-  margin: 0;
-}
-
-.profile-card {
-  width: 100%;
-  margin-bottom: 15px;
-  box-sizing: border-box;
+    background-color: #ffffff !important;
+    color: #212529 !important;
 }

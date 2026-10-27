@@ -97,16 +97,15 @@
   .link-terminos{ color: var(--morado); font-weight: 600; }
   
   /* BOTON */
-  .btn-registrar{
-    background: linear-gradient(90deg, var(--morado) 0%, var(--rosita) 100%);
+ 
+ 
+
+.btn-registrar {
+    background-color: #7b61ff !important;
     border: none;
     height: 52px;
     border-radius: 14px;
     font-weight: 600;
     color: white;
     cursor: pointer;
-  }
-  
-  .btn-registrar:hover{
-    background: linear-gradient(90deg, #7a6ae0 0%, #ff6b9d 100%);
-  }
+}
