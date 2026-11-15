@@ -1,0 +1,288 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #ffffff;
+    color: #292536;
+}
+
+.navbar-inicio {
+    background: #ffffff;
+    border-bottom: 1px solid #eceaf1;
+    padding: 19px 0;
+}
+
+.navbar-inicio .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.marca-inicio {
+    font-size: 25px;
+    font-weight: 750;
+    color: #292536;
+    text-decoration: none;
+}
+
+.marca-morado,
+.footer-contenido h3 span {
+    color: #7854a9;
+}
+
+.nav-inicio {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-inicio a {
+    color: #666174;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.nav-inicio a:hover,
+.nav-inicio .nav-actual {
+    color: #7854a9;
+}
+
+.acciones-inicio {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.perfil-nav {
+    text-decoration: none;
+    color: #51466b;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.perfil-nav i {
+    font-size: 22px;
+}
+
+.btn-salir {
+    text-decoration: none;
+    color: #7854a9;
+    border: 1px solid #d8cce8;
+    padding: 7px 14px;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.btn-salir:hover {
+    background: #f0ebf7;
+    color: #503475;
+}
+
+.hero-inicio {
+    background: linear-gradient(110deg, #f0ebf7, #f8f7fa);
+    padding: 70px 0;
+}
+
+.hero-inicio .container {
+    max-width: 1200px;
+}
+
+.hero-inicio h1 {
+    font-size: clamp(34px, 4vw, 46px);
+    font-weight: 750;
+    margin: 0 0 12px;
+    color: #292536;
+}
+
+.hero-inicio p {
+    color: #716c7c;
+    font-size: 17px;
+    margin: 0;
+}
+
+.seccion-tarjetas {
+    max-width: 1200px;
+    padding-top: 60px;
+    padding-bottom: 85px;
+}
+
+.lista-tarjetas {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.enlace-tarjeta {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.tarjeta-inicio {
+    background: #ffffff;
+    border: 1px solid #ece9f0;
+    border-radius: 11px;
+    padding: 20px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    transition: 0.25s;
+}
+
+.tarjeta-inicio:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(48, 35, 70, 0.08);
+    border-color: #d8cce8;
+}
+
+.tarjeta-izquierda {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.profile-icon-box {
+    background-color: #eee7f7;
+    width: 68px;
+    height: 68px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.profile-img {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+}
+
+.tarjeta-textos h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 5px;
+    color: #292536;
+}
+
+.tarjeta-textos p {
+    color: #777181;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.flecha-tarjeta {
+    color: #7854a9;
+    font-size: 20px;
+    flex-shrink: 0;
+    transition: transform 0.2s;
+}
+
+.tarjeta-inicio:hover .flecha-tarjeta {
+    transform: translateX(5px);
+}
+
+.footer-inicio {
+    background: #211c2c;
+    color: white;
+    padding: 40px 0 20px;
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.footer-contenido h3 {
+    font-size: 24px;
+    font-weight: 750;
+}
+
+.footer-contenido p {
+    color: #aaa4b5;
+    font-size: 13px;
+    margin: 0;
+}
+
+.footer-datos {
+    display: flex;
+    gap: 25px;
+    color: #c1bacd;
+    font-size: 13px;
+}
+
+.footer-final {
+    border-top: 1px solid #403849;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    color: #96909f;
+    font-size: 11px;
+}
+
+@media (max-width: 768px) {
+    .navbar-inicio .container-fluid {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-inicio {
+        order: 3;
+        width: 100%;
+        overflow-x: auto;
+        gap: 20px;
+        padding-top: 10px;
+    }
+
+    .nav-inicio a {
+        white-space: nowrap;
+    }
+
+    .hero-inicio {
+        padding: 45px 0;
+    }
+
+    .tarjeta-inicio {
+        padding: 16px 18px;
+    }
+
+    .tarjeta-izquierda {
+        gap: 15px;
+    }
+
+    .profile-icon-box {
+        width: 56px;
+        height: 56px;
+    }
+
+    .profile-img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .footer-contenido,
+    .footer-final {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .footer-datos {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}

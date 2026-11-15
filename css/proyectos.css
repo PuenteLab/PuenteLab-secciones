@@ -1,0 +1,476 @@
+.navbar-proyecto {
+    background: #ffffff;
+    border-bottom: 1px solid #eceaf1;
+    padding: 19px 0;
+}
+
+.navbar-proyecto .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.marca-proyecto {
+    font-size: 25px;
+    font-weight: 750;
+    color: #292536;
+    text-decoration: none;
+}
+
+.marca-morado,
+.footer-contenido h3 span {
+    color: #7854a9;
+}
+
+.nav-proyecto {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-proyecto a {
+    color: #666174;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.nav-proyecto a:hover,
+.nav-proyecto .nav-actual {
+    color: #7854a9;
+}
+
+.perfil-nav {
+    text-decoration: none;
+    color: #51466b;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.perfil-nav i {
+    font-size: 22px;
+}
+
+.hero-proyectos {
+    background: linear-gradient(110deg, #f0ebf7, #f8f7fa);
+    padding: 85px 0;
+}
+
+.hero-proyectos .container {
+    max-width: 1200px;
+}
+
+.etiqueta-proyectos,
+.subtitulo-seccion {
+    color: #7854a9;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.hero-proyectos h1 {
+    font-size: clamp(35px, 4vw, 48px);
+    font-weight: 750;
+    margin: 18px 0;
+    color: #292536;
+}
+
+.hero-proyectos h1 span {
+    color: #7854a9;
+}
+
+.hero-proyectos p {
+    max-width: 610px;
+    color: #716c7c;
+    line-height: 1.8;
+    font-size: 16px;
+    margin-bottom: 28px;
+}
+
+.btn-explorar {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: #7854a9;
+    color: white;
+    padding: 13px 23px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.btn-explorar:hover {
+    background: #604187;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.seccion-proyectos {
+    max-width: 1200px;
+    padding-top: 75px;
+    padding-bottom: 85px;
+}
+
+.seccion-activos {
+    padding-bottom: 10px;
+}
+
+.encabezado-proyectos {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.encabezado-proyectos h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 10px;
+    color: #292536;
+}
+
+.encabezado-proyectos p {
+    color: #85808f;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.busqueda-proyecto {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    border: 1px solid #e6e2ec;
+    padding: 12px 15px;
+    border-radius: 7px;
+    width: 310px;
+}
+
+.busqueda-proyecto i {
+    color: #8b8298;
+}
+
+.busqueda-proyecto input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 13px;
+    background: transparent;
+}
+
+.filtros-proyectos {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.filtros-proyectos button {
+    background: white;
+    border: 1px solid #e7e3ed;
+    color: #686274;
+    padding: 9px 19px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.filtros-proyectos button:hover {
+    border-color: #cbbbe2;
+    color: #7854a9;
+}
+
+.filtros-proyectos .filtro-activo {
+    background: #7854a9;
+    color: white;
+    border-color: #7854a9;
+}
+
+.tarjeta-proyecto {
+    background: white;
+    border: 1px solid #ece9f0;
+    border-radius: 11px;
+    padding: 27px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: 0.25s;
+}
+
+.tarjeta-proyecto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(48, 35, 70, 0.08);
+    border-color: #d8cce8;
+}
+
+.tarjeta-activa {
+    border-color: #cbbbe2;
+    background: linear-gradient(180deg, #fcfaff 0%, #ffffff 100%);
+}
+
+.proyecto-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.avatar-proyecto {
+    width: 62px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.avatar-uno {
+    background: #eee7f7;
+    color: #7651a6;
+}
+
+.avatar-dos {
+    background: #e7edf6;
+    color: #526b99;
+}
+
+.avatar-tres {
+    background: #f5e9ed;
+    color: #a45d79;
+}
+
+.estado-proyecto {
+    color: #43856a;
+    font-size: 11px;
+    background: #edf6f0;
+    padding: 7px 10px;
+    border-radius: 20px;
+}
+
+.estado-proyecto i {
+    font-size: 7px;
+    margin-right: 4px;
+}
+
+.tarjeta-proyecto h3 {
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #292536;
+}
+
+.equipo-proyecto {
+    color: #7854a9;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.descripcion-proyecto {
+    color: #777181;
+    font-size: 13px;
+    line-height: 1.8;
+    min-height: 55px;
+    margin-top: 15px;
+    margin-bottom: 14px;
+}
+
+.etiquetas-proyecto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.etiquetas-proyecto span {
+    background: #f4effa;
+    color: #7854a9;
+    border: 1px solid #e2d6f3;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.datos-proyecto {
+    border-top: 1px solid #efedf2;
+    border-bottom: 1px solid #efedf2;
+    padding: 15px 0;
+    margin: 17px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.datos-proyecto span {
+    font-size: 12px;
+    color: #777181;
+}
+
+.datos-proyecto i {
+    color: #7854a9;
+    margin-right: 8px;
+}
+
+.btn-proyecto {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #7854a9;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 650;
+}
+
+.btn-proyecto:hover {
+    color: #503475;
+}
+
+.contacto-proyectos {
+    background: #30283f;
+    padding: 48px 0;
+    color: white;
+}
+
+.contacto-proyectos .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.contacto-proyectos span {
+    color: #c8b3e2;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+}
+
+.contacto-proyectos h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 12px 0;
+    max-width: 650px;
+}
+
+.contacto-proyectos p {
+    color: #d0cbd8;
+    font-size: 13px;
+    margin: 0;
+}
+
+.btn-contacto-proyecto {
+    white-space: nowrap;
+    text-decoration: none;
+    color: #30283f;
+    background: white;
+    padding: 13px 20px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 650;
+}
+
+.btn-contacto-proyecto:hover {
+    background: #eee6f7;
+    color: #30283f;
+}
+
+.footer-proyectos {
+    background: #211c2c;
+    color: white;
+    padding: 40px 0 20px;
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.footer-contenido h3 {
+    font-size: 24px;
+    font-weight: 750;
+}
+
+.footer-contenido p {
+    color: #aaa4b5;
+    font-size: 13px;
+    margin: 0;
+}
+
+.footer-datos {
+    display: flex;
+    gap: 25px;
+    color: #c1bacd;
+    font-size: 13px;
+}
+
+.footer-final {
+    border-top: 1px solid #403849;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    color: #96909f;
+    font-size: 11px;
+}
+
+@media (max-width: 768px) {
+    .navbar-proyecto .container-fluid {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-proyecto {
+        order: 3;
+        width: 100%;
+        overflow-x: auto;
+        gap: 20px;
+        padding-top: 10px;
+    }
+
+    .nav-proyecto a {
+        white-space: nowrap;
+    }
+
+    .hero-proyectos {
+        padding: 55px 0;
+    }
+
+    .encabezado-proyectos {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .busqueda-proyecto {
+        width: 100%;
+    }
+
+    .contacto-proyectos .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-contenido,
+    .footer-final {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .footer-datos {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}

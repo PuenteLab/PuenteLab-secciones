@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oportunidades | PuenteLab</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/oportunidades.css">
+</head>
+
+<body>
+
+<header class="navbar-oportunidad">
+    <div class="container-fluid px-5">
+        <a href="seccion-inicio.html" class="marca-oportunidad">
+            <span>Puente<span class="marca-morado">Lab</span></span>
+        </a>
+
+        <nav class="nav-oportunidad">
+            <a href="seccion-inicio.html">Inicio</a>
+            <a href="perfil.html">Mi perfil</a>
+            <a href="oportunidades.html" class="nav-actual">Oportunidades</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="mentorias.html">Mentorías</a>
+        </nav>
+
+        <a href="perfil.html" class="perfil-nav">
+            <i class="bi bi-person-circle"></i>
+            Mi cuenta
+        </a>
+    </div>
+</header>
+
+<main>
+
+    <section class="hero-oportunidades">
+        <div class="container">
+            <span class="etiqueta-oportunidades">¡HOLA, MARTINA! · IMPULSÁ TU CARRERA</span>
+
+            <h1>Oportunidades destacadas <span>en tu región</span></h1>
+
+            <p>
+                Explorá pasantías, proyectos colaborativos y primeras experiencias
+                laborales pensadas para estudiantes de informática, diseño y marketing.
+            </p>
+
+            <a href="#lista-oportunidades" class="btn-explorar">
+                Explorar oportunidades
+                <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <section class="seccion-oportunidades container" id="lista-oportunidades">
+
+        <div class="encabezado-oportunidades">
+            <div>
+                <span class="subtitulo-seccion">CONECTÁ CON EMPRESAS</span>
+                <h2>Listado de oportunidades</h2>
+                <p>Propuestas vigentes para dar tus primeros pasos profesionales.</p>
+            </div>
+
+            <div class="busqueda-oportunidad">
+                <i class="bi bi-search"></i>
+                <input type="text" id="inputBusqueda" placeholder="Buscar por puesto o empresa">
+            </div>
+        </div>
+
+        <div class="filtros-oportunidades">
+            <button type="button" class="btn-filtro filtro-activo" data-categoria="todos">Todos</button>
+            <button type="button" class="btn-filtro" data-categoria="Pasantías">Pasantías</button>
+            <button type="button" class="btn-filtro" data-categoria="Proyectos">Proyectos</button>
+            <button type="button" class="btn-filtro" data-categoria="Laborales">Laborales</button>
+        </div>
+
+        <div class="row g-4" id="grillaOportunidades">
+
+            <!-- Tarjeta destacada de la imagen: Programa pasantía de verano - TeachCorp -->
+            <div class="col-lg-4 col-md-6 item-oportunidad" data-categoria="Pasantías">
+                <article class="tarjeta-oportunidad tarjeta-destacada">
+                    <div class="oportunidad-superior">
+                        <div class="avatar-oportunidad avatar-uno">
+                            <i class="bi bi-briefcase"></i>
+                        </div>
+                        <span class="estado-oportunidad">
+                            <i class="bi bi-circle-fill"></i> Destacada
+                        </span>
+                    </div>
+
+                    <h3>Programa pasantía de verano</h3>
+                    <p class="empresa-oportunidad">TeachCorp</p>
+
+                    <p class="descripcion-oportunidad">
+                        Perfil clave: Estudiantes de informática, marketing o diseño
+                        que busquen su primera experiencia práctica en equipo.
+                    </p>
+
+                    <div class="datos-oportunidad">
+                        <span><i class="bi bi-tag"></i> Tipo: Pasantía</span>
+                        <span><i class="bi bi-mortarboard"></i> Informática, Diseño o Marketing</span>
+                    </div>
+
+                    <a href="#contacto-oportunidades" class="btn-oportunidad">
+                        Ver detalles <i class="bi bi-arrow-right"></i>
+                    </a>
+                </article>
+            </div>
+
+            <!-- Listado de la imagen 1: Marketing Digital - Google -->
+            <div class="col-lg-4 col-md-6 item-oportunidad" data-categoria="Pasantías">
+                <article class="tarjeta-oportunidad">
+                    <div class="oportunidad-superior">
+                        <div class="avatar-oportunidad avatar-dos">GO</div>
+                        <span class="estado-oportunidad">
+                            <i class="bi bi-circle-fill"></i> Abierta
+                        </span>
+                    </div>
+
+                    <h3>Pasantía en Marketing Digital</h3>
+                    <p class="empresa-oportunidad">Google</p>
+
+                    <p class="descripcion-oportunidad">
+                        Participá en campañas digitales, análisis de métricas y
+                        estrategias de posicionamiento junto a equipos regionales.
+                    </p>
+
+                    <div class="datos-oportunidad">
+                        <span><i class="bi bi-tag"></i> Tipo: Pasantía</span>
+                        <span><i class="bi bi-megaphone"></i> Marketing</span>
+                    </div>
+
+                    <a href="#contacto-oportunidades" class="btn-oportunidad">
+                        Ver detalles <i class="bi bi-arrow-right"></i>
+                    </a>
+                </article>
+            </div>
+
+            <!-- Listado de la imagen 2: Desarrollo Web - Mercado Libre -->
+            <div class="col-lg-4 col-md-6 item-oportunidad" data-categoria="Pasantías">
+                <article class="tarjeta-oportunidad">
+                    <div class="oportunidad-superior">
+                        <div class="avatar-oportunidad avatar-tres">ML</div>
+                        <span class="estado-oportunidad">
+                            <i class="bi bi-circle-fill"></i> Abierta
+                        </span>
+                    </div>
+
+                    <h3>Pasantía en Desarrollo Web</h3>
+                    <p class="empresa-oportunidad">Mercado Libre</p>
+
+                    <p class="descripcion-oportunidad">
+                        Formate en desarrollo frontend y backend construyendo
+                        soluciones escalables con acompañamiento técnico continuo.
+                    </p>
+
+                    <div class="datos-oportunidad">
+                        <span><i class="bi bi-tag"></i> Tipo: Pasantía</span>
+                        <span><i class="bi bi-code-slash"></i> Programación</span>
+                    </div>
+
+                    <a href="#contacto-oportunidades" class="btn-oportunidad">
+                        Ver detalles <i class="bi bi-arrow-right"></i>
+                    </a>
+                </article>
+            </div>
+
+            <!-- Listado de la imagen 3: Diseño UX/UI - Globant -->
+            <div class="col-lg-4 col-md-6 item-oportunidad" data-categoria="Pasantías">
+                <article class="tarjeta-oportunidad">
+                    <div class="oportunidad-superior">
+                        <div class="avatar-oportunidad avatar-cuatro">GL</div>
+                        <span class="estado-oportunidad">
+                            <i class="bi bi-circle-fill"></i> Abierta
+                        </span>
+                    </div>
+
+                    <h3>Pasantía en Diseño UX/UI</h3>
+                    <p class="empresa-oportunidad">Globant</p>
+
+                    <p class="descripcion-oportunidad">
+                        Colaborá en investigación de usuarios, wireframes y
+                        prototipos interactivos para productos digitales.
+                    </p>
+
+                    <div class="datos-oportunidad">
+                        <span><i class="bi bi-tag"></i> Tipo: Pasantía</span>
+                        <span><i class="bi bi-palette"></i> Diseño</span>
+                    </div>
+
+                    <a href="#contacto-oportunidades" class="btn-oportunidad">
+                        Ver detalles <i class="bi bi-arrow-right"></i>
+                    </a>
+                </article>
+            </div>
+
+            <!-- Tarjeta extra para el filtro Proyectos -->
+            <div class="col-lg-4 col-md-6 item-oportunidad" data-categoria="Proyectos">
+                <article class="tarjeta-oportunidad">
+                    <div class="oportunidad-superior">
+                        <div class="avatar-oportunidad avatar-uno">PL</div>
+                        <span class="estado-oportunidad">
+                            <i class="bi bi-circle-fill"></i> Abierta
+                        </span>
+                    </div>
+
+                    <h3>App de Impacto Comunitario</h3>
+                    <p class="empresa-oportunidad">PuenteLab · Proyecto Colaborativo</p>
+
+                    <p class="descripcion-oportunidad">
+                        Sumate a un equipo interdisciplinario para diseñar y
+                        programar una plataforma web para organizaciones locales.
+                    </p>
+
+                    <div class="datos-oportunidad">
+                        <span><i class="bi bi-tag"></i> Tipo: Proyecto</span>
+                        <span><i class="bi bi-people"></i> Equipo de 4 estudiantes</span>
+                    </div>
+
+                    <a href="#contacto-oportunidades" class="btn-oportunidad">
+                        Ver detalles <i class="bi bi-arrow-right"></i>
+                    </a>
+                </article>
+            </div>
+
+            <!-- Tarjeta extra para el filtro Laborales -->
+            <div class="col-lg-4 col-md-6 item-oportunidad" data-categoria="Laborales">
+                <article class="tarjeta-oportunidad">
+                    <div class="oportunidad-superior">
+                        <div class="avatar-oportunidad avatar-dos">NX</div>
+                        <span class="estado-oportunidad">
+                            <i class="bi bi-circle-fill"></i> Abierta
+                        </span>
+                    </div>
+
+                    <h3>Desarrollador Frontend Junior</h3>
+                    <p class="empresa-oportunidad">Nexo Digital</p>
+
+                    <p class="descripcion-oportunidad">
+                        Búsqueda orientada a egresados o estudiantes avanzados
+                        con conocimientos en HTML, CSS, Bootstrap y JavaScript.
+                    </p>
+
+                    <div class="datos-oportunidad">
+                        <span><i class="bi bi-tag"></i> Tipo: Laboral · Part-time</span>
+                        <span><i class="bi bi-laptop"></i> Modalidad híbrida</span>
+                    </div>
+
+                    <a href="#contacto-oportunidades" class="btn-oportunidad">
+                        Ver detalles <i class="bi bi-arrow-right"></i>
+                    </a>
+                </article>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contacto-oportunidades" id="contacto-oportunidades">
+        <div class="container">
+            <div>
+                <span>¿QUERÉS PREPARARTE ANTES DE POSTULARTE?</span>
+                <h2>Potenciá tu perfil con el acompañamiento de un mentor.</h2>
+                <p>Recibí orientación sobre tu CV, portfolio y entrevistas técnicas.</p>
+            </div>
+
+            <a href="mentorias.html" class="btn-contacto-oportunidad">
+                Explorar mentorías <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer-oportunidades">
+    <div class="container">
+        <div class="footer-contenido">
+            <div>
+                <h3>Puente<span>Lab</span></h3>
+                <p>Conectando estudiantes con su futuro profesional.</p>
+            </div>
+
+            <div class="footer-datos">
+                <span>Proyecto educativo</span>
+                <span>4.º año</span>
+                <span>2026</span>
+            </div>
+        </div>
+
+        <div class="footer-final">
+            <span>© 2026 PuenteLab. Todos los derechos reservados.</span>
+            <span>Aprender, conectar y crecer.</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const botonesFiltro = document.querySelectorAll('.btn-filtro');
+    const tarjetas = document.querySelectorAll('.item-oportunidad');
+    const inputBusqueda = document.getElementById('inputBusqueda');
+
+    let categoriaActual = 'todos';
+
+    function filtrarOportunidades() {
+        const texto = inputBusqueda.value.toLowerCase().trim();
+
+        tarjetas.forEach(tarjeta => {
+            const categoria = tarjeta.dataset.categoria;
+            const contenido = tarjeta.textContent.toLowerCase();
+            const coincideCategoria = categoriaActual === 'todos' || categoria === categoriaActual;
+            const coincideTexto = contenido.includes(texto);
+
+            tarjeta.style.display = (coincideCategoria && coincideTexto) ? 'block' : 'none';
+        });
+    }
+
+    botonesFiltro.forEach(boton => {
+        boton.addEventListener('click', () => {
+            botonesFiltro.forEach(b => b.classList.remove('filtro-activo'));
+            boton.classList.add('filtro-activo');
+            categoriaActual = boton.dataset.categoria;
+            filtrarOportunidades();
+        });
+    });
+
+    inputBusqueda.addEventListener('input', filtrarOportunidades);
+</script>
+
+</body>
+</html>
