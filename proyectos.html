@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos | PuenteLab</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/proyectos.css">
+</head>
+
+<body>
+
+<header class="navbar-proyecto">
+    <div class="container-fluid px-5">
+        <a href="seccion-inicio.html" class="marca-proyecto">
+            <span>Puente<span class="marca-morado">Lab</span></span>
+        </a>
+
+        <nav class="nav-proyecto">
+            <a href="seccion-inicio.html">Inicio</a>
+            <a href="perfil.html">Mi perfil</a>
+            <a href="oportunidades.html">Oportunidades</a>
+            <a href="proyectos.html" class="nav-actual">Proyectos</a>
+            <a href="mentorias.html">Mentorías</a>
+        </nav>
+
+        <a href="perfil.html" class="perfil-nav">
+            <i class="bi bi-person-circle"></i>
+            Mi cuenta
+        </a>
+    </div>
+</header>
+
+<main>
+
+    <!-- Hero superior con el estilo original -->
+    <section class="hero-proyectos">
+        <div class="container">
+            <span class="etiqueta-proyectos">APRENDÉ HACIENDO EN EQUIPO</span>
+
+            <h1>Explorá y creá <span>proyectos</span></h1>
+
+            <p>
+                Gestioná tus iniciativas en curso, sumate a equipos interdisciplinarios
+                y desarrollá soluciones reales en programación y diseño.
+            </p>
+
+            <a href="#proyectos-destacados" class="btn-explorar">
+                Explorar más proyectos
+                <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Sección 1: Mis proyectos activos -->
+    <section class="seccion-proyectos seccion-activos container">
+
+        <div class="encabezado-proyectos">
+            <div>
+                <span class="subtitulo-seccion">TU ESPACIO DE TRABAJO</span>
+                <h2>Mis proyectos activos</h2>
+                <p>Proyectos en los que estás participando actualmente.</p>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-6 col-md-12">
+                <article class="tarjeta-proyecto tarjeta-activa">
+                    <div class="proyecto-superior">
+                        <div class="avatar-proyecto avatar-uno">
+                            <i class="bi bi-briefcase"></i>
+                        </div>
+                        <span class="estado-proyecto">
+                            <i class="bi bi-circle-fill"></i> En curso
+                        </span>
+                    </div>
+
+                    <h3>Plataforma de aprendizaje</h3>
+                    <p class="equipo-proyecto">Equipo 3 integrantes</p>
+
+                    <p class="descripcion-proyecto">
+                        Plataforma web para compartir recursos educativos.
+                    </p>
+
+                    <div class="etiquetas-proyecto">
+                        <span>Web</span>
+                        <span>Educación</span>
+                    </div>
+
+                    <div class="datos-proyecto">
+                        <span><i class="bi bi-people"></i> 3 integrantes activos</span>
+                        <span><i class="bi bi-folder2-open"></i> Desarrollo Web &amp; Educación</span>
+                    </div>
+
+                    <a href="#contacto-proyectos" class="btn-proyecto">
+                        Ver detalles <i class="bi bi-arrow-right"></i>
+                    </a>
+                </article>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Sección 2: Proyectos Destacados -->
+    <section class="seccion-proyectos container" id="proyectos-destacados">
+
+        <div class="encabezado-proyectos">
+            <div>
+                <span class="subtitulo-seccion">DESCUBRÍ INICIATIVAS</span>
+                <h2>Proyectos destacados</h2>
+                <p>Sumate a equipos estudiantiles o encontrá inspiración para tu próximo desarrollo.</p>
+            </div>
+
+            <div class="busqueda-proyecto">
+                <i class="bi bi-search"></i>
+                <input type="text" id="inputBusqueda" placeholder="Buscar proyectos destacados...">
+            </div>
+        </div>
+
+        <div class="filtros-proyectos">
+            <button type="button" class="btn-filtro filtro-activo" data-categoria="todos">Todos</button>
+            <button type="button" class="btn-filtro" data-categoria="Programación">Programación</button>
+            <button type="button" class="btn-filtro" data-categoria="Diseño">Diseño</button>
+        </div>
+
+        <div class="row g-4" id="grillaProyectos">
+
+            <!-- Proyecto destacado de la imagen -->
+            <div class="col-lg-4 col-md-6 item-proyecto" data-categoria="Programación Diseño">
+                <article class="tarjeta-proyecto">
+                    <div class="proyecto-superior">
+                        <div class="avatar-proyecto avatar-uno">
+                            <i class="bi bi-folder"></i>
+                        </div>
+                        <span class="estado-proyecto">
+                            <i class="bi bi-circle-fill"></i> Destacado
+                        </span>
+                    </div>
+
+                    <h3>App de gestión estudiantil</h3>
+                    <p class="equipo-proyecto">Equipo 3 integrantes</p>
+
+                    <p class="descripcion-proyecto">
+                        Desarrollo de una aplicación para organizar materiales, horarios y tareas.
+                    </p>
+
+                    <div class="etiquetas-proyecto">
+                        <span>Programación</span>
+                        <span>Diseño</span>
+                    </div>
+
+                    <div class="datos-proyecto">
+                        <span><i class="bi bi-people"></i> Equipo 3 integrantes</span>
+                        <span><i class="bi bi-code-slash"></i> Programación · Diseño</span>
+                    </div>
+
+                    <a href="#contacto-proyectos" class="btn-proyecto">
+                        Ver detalles <i class="bi bi-arrow-right"></i>
+                    </a>
+                </article>
+            </div>
+
+            <!-- Tarjeta complementaria para balancear la grilla de PC -->
+            <div class="col-lg-4 col-md-6 item-proyecto" data-categoria="Diseño">
+                <article class="tarjeta-proyecto">
+                    <div class="proyecto-superior">
+                        <div class="avatar-proyecto avatar-dos">
+                            <i class="bi bi-palette"></i>
+                        </div>
+                        <span class="estado-proyecto">
+                            <i class="bi bi-circle-fill"></i> Convocatoria abierta
+                        </span>
+                    </div>
+
+                    <h3>Rediseño de Guía Cultural</h3>
+                    <p class="equipo-proyecto">Equipo 4 integrantes</p>
+
+                    <p class="descripcion-proyecto">
+                        Sistema de diseño y prototipo interactivo para difundir eventos juveniles locales.
+                    </p>
+
+                    <div class="etiquetas-proyecto">
+                        <span>Diseño</span>
+                        <span>UX/UI</span>
+                    </div>
+
+                    <div class="datos-proyecto">
+                        <span><i class="bi bi-people"></i> Equipo 4 integrantes</span>
+                        <span><i class="bi bi-palette"></i> Diseño</span>
+                    </div>
+
+                    <a href="#contacto-proyectos" class="btn-proyecto">
+                        Ver detalles <i class="bi bi-arrow-right"></i>
+                    </a>
+                </article>
+            </div>
+
+            <!-- Tarjeta complementaria para balancear la grilla de PC -->
+            <div class="col-lg-4 col-md-6 item-proyecto" data-categoria="Programación">
+                <article class="tarjeta-proyecto">
+                    <div class="proyecto-superior">
+                        <div class="avatar-proyecto avatar-tres">
+                            <i class="bi bi-terminal"></i>
+                        </div>
+                        <span class="estado-proyecto">
+                            <i class="bi bi-circle-fill"></i> Convocatoria abierta
+                        </span>
+                    </div>
+
+                    <h3>Portal de Tutorías Pares</h3>
+                    <p class="equipo-proyecto">Equipo 3 integrantes</p>
+
+                    <p class="descripcion-proyecto">
+                        Aplicación web para coordinar grupos de estudio y consultas entre estudiantes.
+                    </p>
+
+                    <div class="etiquetas-proyecto">
+                        <span>Programación</span>
+                        <span>Web</span>
+                    </div>
+
+                    <div class="datos-proyecto">
+                        <span><i class="bi bi-people"></i> Equipo 3 integrantes</span>
+                        <span><i class="bi bi-code-slash"></i> Programación</span>
+                    </div>
+
+                    <a href="#contacto-proyectos" class="btn-proyecto">
+                        Ver detalles <i class="bi bi-arrow-right"></i>
+                    </a>
+                </article>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Banner inferior estilo mentorías -->
+    <section class="contacto-proyectos" id="contacto-proyectos">
+        <div class="container">
+            <div>
+                <span>¿TENÉS UNA IDEA PARA DESARROLLAR?</span>
+                <h2>Explorá más proyectos o armá tu propio equipo de trabajo.</h2>
+                <p>Conectá con compañeros y mentores para llevar tus propuestas a la práctica.</p>
+            </div>
+
+            <a href="mentorias.html" class="btn-contacto-proyecto">
+                Explorar más proyectos <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer-proyectos">
+    <div class="container">
+        <div class="footer-contenido">
+            <div>
+                <h3>Puente<span>Lab</span></h3>
+                <p>Conectando estudiantes con su futuro profesional.</p>
+            </div>
+
+            <div class="footer-datos">
+                <span>Proyecto educativo</span>
+                <span>4.º año</span>
+                <span>2026</span>
+            </div>
+        </div>
+
+        <div class="footer-final">
+            <span>© 2026 PuenteLab. Todos los derechos reservados.</span>
+            <span>Aprender, conectar y crecer.</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const botonesFiltro = document.querySelectorAll('.btn-filtro');
+    const tarjetas = document.querySelectorAll('.item-proyecto');
+    const inputBusqueda = document.getElementById('inputBusqueda');
+
+    let categoriaActual = 'todos';
+
+    function filtrarProyectos() {
+        const texto = inputBusqueda.value.toLowerCase().trim();
+
+        tarjetas.forEach(tarjeta => {
+            const categorias = tarjeta.dataset.categoria;
+            const contenido = tarjeta.textContent.toLowerCase();
+            const coincideCategoria = categoriaActual === 'todos' || categorias.includes(categoriaActual);
+            const coincideTexto = contenido.includes(texto);
+
+            tarjeta.style.display = (coincideCategoria && coincideTexto) ? 'block' : 'none';
+        });
+    }
+
+    botonesFiltro.forEach(boton => {
+        boton.addEventListener('click', () => {
+            botonesFiltro.forEach(b => b.classList.remove('filtro-activo'));
+            boton.classList.add('filtro-activo');
+            categoriaActual = boton.dataset.categoria;
+            filtrarProyectos();
+        });
+    });
+
+    inputBusqueda.addEventListener('input', filtrarProyectos);
+</script>
+
+</body>
+</html>
