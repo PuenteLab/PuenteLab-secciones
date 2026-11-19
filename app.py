@@ -105,3 +105,52 @@ def oportunidades():
 @app.route("/proyectos")
 def proyectos():
     return render_template("proyectos.html")
+
+# ==========================================
+# PARTE DE DELFI (Ver, editar y eliminar Perfil)
+# ==========================================
+@app.route("/perfil")
+def perfil():
+    if "usuario_id" not in session:
+        return redirect(url_for("login"))
+
+    conn = conectar_db()
+    usuario = conn.execute("SELECT * FROM usuarios WHERE id = ?", (session["usuario_id"],)).fetchone()
+    conn.close()
+
+    return render_template("perfil.html", usuario=usuario)
+
+@app.route("/perfil/editar", methods=["POST"])
+def editar_perfil():
+    if "usuario_id" not in session:
+        return redirect(url_for("login"))
+
+    nombre = request.form.get("nombre")
+    edad = request.form.get("edad")
+    genero = request.form.get("genero")
+    orientacion = request.form.get("orientacion")
+    estudio = request.form.get("estudio")
+
+    conn = conectar_db()
+    conn.execute("""
+        UPDATE usuarios
+        SET nombre = ?, edad = ?, genero = ?, orientacion = ?, estudio = ?
+        WHERE id = ?
+    """, (nombre, edad, genero, orientacion, estudio, session["usuario_id"]))
+    conn.commit()
+    conn.close()
+
+    return redirect(url_for("perfil"))
+
+@app.route("/perfil/eliminar", methods=["POST"])
+def eliminar_perfil():
+    if "usuario_id" not in session:
+        return redirect(url_for("login"))
+
+    conn = conectar_db()
+    conn.execute("DELETE FROM usuarios WHERE id = ?", (session["usuario_id"],))
+    conn.commit()
+    conn.close()
+
+    session.clear()
+    return redirect(url_for("index"))
