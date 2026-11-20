@@ -43,7 +43,9 @@
     <section class="hero-inicio">
         <div class="container">
             <h1>¡Hola, {{ usuario['nombre'] }}!</h1>
-            <p>Seguimos construyendo tu futuro · Orientación: <strong>{{ usuario['orientacion'] }}</strong> ({{ usuario['estudio'] }})</p>
+            {% set orientaciones = {'programacion': 'Programación', 'diseno': 'Diseño', 'marketing': 'Marketing', 'negocios': 'Negocios'} %}
+            {% set estudios = {'programacion': 'Programación', 'informatica': 'Informática', 'diseno-ux': 'Diseño UX/UI', 'marketing-digital': 'Marketing Digital', 'otro': 'Otro'} %}
+            <p>Seguimos construyendo tu futuro · Orientación: <strong>{{ orientaciones.get(usuario['orientacion'], usuario['orientacion']) }}</strong> ({{ estudios.get(usuario['estudio'], usuario['estudio']) }})</p>
         </div>
     </section>
 

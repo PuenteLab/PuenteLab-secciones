@@ -11,7 +11,7 @@ DB_PATH = os.path.join(BASE_DIR, "puentelab.db")
 SQL_PATH = os.path.join(BASE_DIR, "database.sql")
 
 def conectar_db():
-    conn = sqlite3.connect(DB_PATH)
+    conn = sqlite3.connect(DB_PATH, timeout=10)
     conn.row_factory = sqlite3.Row
     return conn
 
@@ -41,18 +41,19 @@ def registro():
     orientacion = request.form.get("orientacion")
     estudio = request.form.get("estudio")
 
+    conn = conectar_db()
     try:
-        conn = conectar_db()
         conn.execute(
             """INSERT INTO usuarios (nombre, email, password, edad, genero, orientacion, estudio)
                VALUES (?, ?, ?, ?, ?, ?, ?)""",
             (nombre, email, password, edad, genero, orientacion, estudio)
         )
         conn.commit()
-        conn.close()
         return redirect(url_for("login"))
     except sqlite3.IntegrityError:
         return "Ese correo ya está registrado. <a href='/'>Volver</a>"
+    finally:
+        conn.close()
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
@@ -71,11 +72,7 @@ def login():
 
     return render_template("login.html")
 
-
-if __name__ == "__main__":
-    app.run(debug=True)
-
-    # ==========================================
+# ==========================================
 # PARTE DE Oriana (Inicio personalizado y menú)
 # ==========================================
 @app.route("/inicio")
@@ -154,3 +151,9 @@ def eliminar_perfil():
 
     session.clear()
     return redirect(url_for("index"))
+
+# ==========================================
+# ARRANQUE DEL SERVIDOR (Siempre al final)
+# ==========================================
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5001, debug=True, use_reloader=False)
